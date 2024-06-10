@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plante - Nom de la Plante</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -23,18 +25,26 @@
             <h2>Personnes en charge</h2>
             <ul>
                 <li>Mattéo</li>
-                <li>Nassime</li>
-                <li>Sami</li>
+                <li>Nassim</li>
+                <li>Samy</li>
                 <li>Quentin</li>
                 <li>Baptiste</li>
             </ul>
         </section>
         <section class="tasks">
             <h2>Tâches à venir</h2>
-            <ul>
+            <ul id="upcoming-tasks">
                 <li>Arrosage - 12/06/2024</li>
                 <li>Fertilisation - 15/06/2024</li>
             </ul>
+            <h2>Ajouter une tâche</h2>
+            <form id="task-form">
+                <label for="task-name">Nom de la tâche:</label>
+                <input type="text" id="task-name" required>
+                <label for="task-date">Date:</label>
+                <input type="date" id="task-date" required>
+                <button type="submit">Ajouter</button>
+            </form>
             <h2>Tâches réalisées</h2>
             <ul>
                 <li>Arrosage - Mattéo - 10/06/2024</li>
@@ -42,5 +52,6 @@
             </ul>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
