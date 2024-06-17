@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plante - Orchidée</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="window.location.href='jardin.html'">Jardin</button>
+            <button onclick="window.location.href='utilisateurs.html'">Utilisateurs</button>
+        </nav>
+    </header>
+    <main>
+        <section class="plant-info">
+            <h1>Orchidée</h1>
+            <img src="5eceab10ede4d_entretenir_orchidee_2.webp" alt="Photo de l'Orchidée">
+            <p>Description de la plante : Les Orchidées forment une famille de plantes monocotylédones, les Orchidaceae. Elles comptent environ 25 000 espèces réparties en 850 genres.</p>
+        </section>
+        <section class="caretakers">
+            <h2>Personnes en charge</h2>
+            <ul>
+                <li>Élodie</li>
+                <li>Lucas</li>
+                <li>Chloé</li>
+                <li>Jules</li>
+                <li>Marie</li>
+            </ul>
+        </section>
+        <section class="tasks">
+            <h2>Tâches à venir</h2>
+            <ul id="upcoming-tasks">
+                <li>Arrosage - 14/06/2024</li>
+                <li>Fertilisation - 18/06/2024</li>
+            </ul>
+            <h2>Ajouter une tâche</h2>
+            <form id="task-form">
+                <label for="task-name">Nom de la tâche:</label>
+                <input type="text" id="task-name" required>
+                <label for="task-date">Date:</label>
+                <input type="date" id="task-date" required>
+                <button type="submit">Ajouter</button>
+            </form>
+            <h2>Tâches réalisées</h2>
+            <ul>
+                <li>Arrosage - Élodie - 12/06/2024</li>
+                <li>Rempotage - Lucas - 08/06/2024</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

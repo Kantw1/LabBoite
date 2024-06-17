@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plante - Lavande</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="window.location.href='jardin.html'">Jardin</button>
+            <button onclick="window.location.href='utilisateurs.html'">Utilisateurs</button>
+        </nav>
+    </header>
+    <main>
+        <section class="plant-info">
+            <h1>Lavande</h1>
+            <img src="lavandula-angustifolia-spear-blue-vraie-lavande-bleu-violet.webp" alt="Photo de la Lavande">
+            <p>Description de la plante : La lavande est un genre de plantes de la famille des Lamiacées. Elle est cultivée pour ses fleurs odorantes, utilisées en parfumerie, cosmétique, et en phytothérapie.</p>
+        </section>
+        <section class="caretakers">
+            <h2>Personnes en charge</h2>
+            <ul>
+                <li>Luc</li>
+                <li>Manon</li>
+                <li>Léo</li>
+                <li>Anna</li>
+                <li>Camille</li>
+            </ul>
+        </section>
+        <section class="tasks">
+            <h2>Tâches à venir</h2>
+            <ul id="upcoming-tasks">
+                <li>Arrosage - 16/06/2024</li>
+                <li>Taille - 20/06/2024</li>
+            </ul>
+            <h2>Ajouter une tâche</h2>
+            <form id="task-form">
+                <label for="task-name">Nom de la tâche:</label>
+                <input type="text" id="task-name" required>
+                <label for="task-date">Date:</label>
+                <input type="date" id="task-date" required>
+                <button type="submit">Ajouter</button>
+            </form>
+            <h2>Tâches réalisées</h2>
+            <ul>
+                <li>Arrosage - Luc - 14/06/2024</li>
+                <li>Fertilisation - Manon - 10/06/2024</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
